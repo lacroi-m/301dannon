@@ -4,8 +4,8 @@
 // Made by ze
 // Login   <maxime.lacroix@epitech.eu>
 // 
-// Started on  Tue Sep 19 18:27:28 2017 ze
-// Last update Tue Sep 19 18:27:36 2017 ze
+// Started on  Tue Sep 19 10:43:15 2017 ze
+// Last update Tue Sep 19 22:04:04 2017 ze
 //
 
 #include <vector>
@@ -41,37 +41,42 @@ bool	isSorted(std::vector<float> nbrcpy)
   return (true);
 }
 
-int	selectionSort(std::vector<float> number)
+std::vector<float>	insert(float number)
+{
+  std::vector<float>	added;
+}
+
+int	insertionSort(std::vector<float> number)
 {
   int			i;
-  int			j;	//comparing next a actual
-  int			count;  //count the number of operations
-  
+  int			counter;
   float			lowest;
   float			next;	//tmp cpy for swaping
   
   std::vector<float>	nbrcpy(number);
-  
+
+  std::vector<float>	builder;
   i = 0;
   count = 0;
-  while (i < (int)nbrcpy.size())
+
+  while (i < nbrcpy.size())
     {
-      if (isSorted(nbrcpy) == true)
-	return (count);
-      j = i + 1;
-      while (j < (int)nbrcpy.size())
-	{
-	  lowest = nbrcpy[i];
-	  next = nbrcpy[j];
-	  if (lowest > next)
-	    {
-	      count++;
-	      nbrcpy[j] = lowest;
-	      nbrcpy[i] = next;
-	    }
-	  j++;
-	}
-      i++;
+      builder.push_back(nbrcpy[i++]);
+      builder = insert();
+      
     }
+  if (isSorted(builder) == true)
+    return (counter);
   return (-1);
+}
+
+int	main()
+{
+  std::vector<float>	nbr;
+
+  nbr.push_back(1);
+  nbr.push_back(7);
+  nbr.push_back(4);
+  nbr.push_back(5);
+  //  std::cout << "nbr of recurences: " << selectionSort(nbr) << std::endl;
 }
