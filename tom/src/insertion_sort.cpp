@@ -5,15 +5,15 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:38:35 2017 Tom Jeammet
-// Last update Wed Sep 20 00:40:56 2017 Tom Jeammet
+// Last update Mon Sep 25 13:58:37 2017 Tom Jeammet
 //
 
 #include "../inc/insertion_sort.hpp"
 
 //Ctor
-Insertion::Insertion(int it)
+Insertion::Insertion(void)
 {
-  this->set_it(it);
+  this->set_it(0);
 }
 
 //Dtor
@@ -40,7 +40,7 @@ void                                    Insertion::incr_it(void)
   this->_it = this->_it + 1;
 }
 
-void                                    Insertion::sort(std::vector<float> tab)
+std::vector<float>			Insertion::sort(std::vector<float> tab)
 {
-
+  return (tab);
 }

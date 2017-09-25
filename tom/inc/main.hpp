@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:35:18 2017 Tom Jeammet
-// Last update Wed Sep 20 00:18:20 2017 Tom Jeammet
+// Last update Mon Sep 25 12:52:22 2017 Tom Jeammet
 //
 
 #ifndef __MAIN_HPP__
@@ -20,5 +20,10 @@
 
 # include "exception.hpp"
 # include "print.hpp"
+# include "selection_sort.hpp"
+# include "insertion_sort.hpp"
+# include "bubble_sort.hpp"
+# include "quick_sort.hpp"
+# include "merge_sort.hpp"
 
 #endif /* ! __MAIN_HPP__ */

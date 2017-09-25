@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:31:38 2017 Tom Jeammet
-// Last update Wed Sep 20 00:32:19 2017 Tom Jeammet
+// Last update Mon Sep 25 12:55:44 2017 Tom Jeammet
 //
 
 #ifndef __QUICK_SORT_HPP__
@@ -16,11 +16,11 @@
 class                                   Quick
 {
 private:
-  int                                   it;
+  int                                   _it;
 
 public:
   //Ctor
-  Quick(int);
+  Quick(void);
   //Dtor
   ~Quick(void);
   //Setter
@@ -28,7 +28,8 @@ public:
   //Getter
   int                                   get_it(void);
   //Member
-  void                                  sort(std::vector<float>);
+  void					incr_it(void);
+  std::vector<float>			sort(std::vector<float>);
 };
 
 #endif /* ! __QUICK_SORT_HPP__ */

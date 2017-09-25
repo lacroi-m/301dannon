@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:23:31 2017 Tom Jeammet
-// Last update Wed Sep 20 00:37:21 2017 Tom Jeammet
+// Last update Mon Sep 25 12:54:29 2017 Tom Jeammet
 //
 
 #ifndef __SELECTION_SORT_HPP__
@@ -20,7 +20,7 @@ private:
 
 public:
   //Ctor
-  Selection(int);
+  Selection(void);
   //Dtor
   ~Selection(void);
   //Setter
@@ -29,7 +29,7 @@ public:
   int					get_it(void);
   //Member
   void					incr_it(void);
-  void                                  sort(std::vector<float>);
+  std::vector<float>			sort(std::vector<float>);
 };
 
 #endif /* ! __SELECTION_SORT_HPP__ */

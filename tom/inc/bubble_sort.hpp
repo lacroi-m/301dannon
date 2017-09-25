@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:28:20 2017 Tom Jeammet
-// Last update Wed Sep 20 00:33:38 2017 Tom Jeammet
+// Last update Sat Sep 23 10:17:47 2017 Tom Jeammet
 //
 
 #ifndef __BUBBLE_SORT_HPP__
@@ -16,11 +16,11 @@
 class					Bubble
 {
  private:
-  int					it;
+  int					_it;
 
  public:
   //Ctor
-  Bubble(int);
+  Bubble(void);
   //Dtor
   ~Bubble(void);
   //Setter
@@ -28,8 +28,9 @@ class					Bubble
   //Getter
   int                                   get_it(void);
   //Member
-  void                                  sort(std::vector<float>);
   void					incr_it(void);
+  std::vector<float>			sort(std::vector<float>);
+
 };
 
 #endif /* ! __BUBBLE_SORT_HPP__ */
