@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:33:57 2017 Tom Jeammet
-// Last update Tue Sep 26 09:59:05 2017 ze
+// Last update Tue Sep 26 13:23:33 2017 ze
 //
 
-#include "../inc/selection_sort.hpp"
+#include "selection_sort.hpp"
 
 //Ctor
 Selection::Selection(void)

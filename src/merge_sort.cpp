@@ -5,12 +5,12 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:43:00 2017 Tom Jeammet
-// Last update Tue Sep 26 12:42:39 2017 ze
+// Last update Tue Sep 26 13:24:07 2017 ze
 //
 
 #include <iostream>
-#include "../inc/print.hpp"
-#include "../inc/merge_sort.hpp"
+#include "print.hpp"
+#include "merge_sort.hpp"
 
 //Ctor
 Merge::Merge(void)

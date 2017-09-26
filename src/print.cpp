@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:11:43 2017 Tom Jeammet
-// Last update Sat Sep 23 10:04:42 2017 Tom Jeammet
+// Last update Tue Sep 26 13:23:07 2017 ze
 //
 
-#include "../inc/print.hpp"
+#include "print.hpp"
 
 void					print_ftab(std::vector<float> tab)
 {

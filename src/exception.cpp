@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Thu Jul 20 22:07:52 2017 Tom Jeammet
-// Last update Tue Sep 19 17:00:51 2017 Tom Jeammet
+// Last update Tue Sep 26 13:23:46 2017 ze
 //
 
-#include "../inc/exception.hpp"
+#include "exception.hpp"
 
 //Ctor
 Err::Err(std::string msg)

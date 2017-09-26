@@ -5,13 +5,12 @@
 // Login   <maxime.lacroix@epitech.eu>
 // 
 // Started on  Tue Sep 19 18:27:28 2017 ze
-// Last update Mon Sep 25 18:24:35 2017 ze
+// Last update Tue Sep 26 13:39:21 2017 ze
 //
 
 #include <vector>
 #include <iostream>
-
-bool    isSorted(std::vector<float> nbrcpy);
+#include "main.hpp"
 
 int	selectionSort(std::vector<float> number)
 {

@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:41:56 2017 Tom Jeammet
-// Last update Mon Sep 25 13:59:07 2017 Tom Jeammet
+// Last update Tue Sep 26 13:24:17 2017 ze
 //
 
-#include "../inc/quick_sort.hpp"
+#include "quick_sort.hpp"
 
 //Ctor
 Quick::Quick(void)

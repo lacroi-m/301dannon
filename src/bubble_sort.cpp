@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:40:10 2017 Tom Jeammet
-// Last update Tue Sep 26 12:41:26 2017 ze
+// Last update Tue Sep 26 13:22:36 2017 ze
 //
 
-#include "../inc/bubble_sort.hpp"
+#include "bubble_sort.hpp"
 
 //Ctor
 Bubble::Bubble(void)
