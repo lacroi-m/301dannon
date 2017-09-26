@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:43:00 2017 Tom Jeammet
-// Last update Mon Sep 25 14:09:32 2017 Tom Jeammet
+// Last update Mon Sep 25 14:56:02 2017 Tom Jeammet
 //
 
 #include <iostream>
@@ -50,22 +50,34 @@ std::vector<float>			Merge::concat_sorting(std::vector<float> l1, std::vector<fl
 
   i = 0;
   j = 0;
+  std::cout << "start : " << this->get_it() << std::endl;
   while (i < l1.size())
     {
       this->incr_it();
-      if (l1.at(i) < l2.at(j))
+      if (j < l2.size())
+	{
+	  if (l1.at(i) < l2.at(j))
+	    {
+	      final.push_back(l1.at(i));
+	      i = i + 1;
+	    }
+	  else
+	    {
+	      final.push_back(l2.at(j));
+	      j = j + 1;
+	    }
+	}
+      else
 	{
 	  final.push_back(l1.at(i));
 	  i = i + 1;
 	}
-      else
-	{
-	  final.push_back(l2.at(j));
-	  j = j + 1;
-	}
     }
-  if (j < l2.size())
-    final.push_back(l2.at(i));
+  while (j < l2.size())
+    {
+      final.push_back(l2.at(j));
+      j = j + 1;
+    }
   return (final);
 }
 
@@ -79,18 +91,13 @@ std::vector<float>			Merge::sort(std::vector<float> tab)
   i = 0;
   if (tab.size() > 1)
     {
-      std::cout << "first : " << std::endl;
       while (i < tab.size() / 2)
 	{
-	  std::cout << tab.at(i) << std::endl;
 	  list1.push_back(tab.at(i));
 	  i = i + 1;
 	}
-      std::cout << std::endl;
-      std::cout << "second : " << std::endl;
       while (i < tab.size())
 	{
-	  std::cout << tab.at(i) << std::endl;
 	  list2.push_back(tab.at(i));
 	  i = i + 1;
 	}

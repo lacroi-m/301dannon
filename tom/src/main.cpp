@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:26:44 2017 Tom Jeammet
-// Last update Mon Sep 25 14:07:05 2017 Tom Jeammet
+// Last update Mon Sep 25 14:41:49 2017 Tom Jeammet
 //
 
 #include "../inc/main.hpp"
@@ -61,6 +61,7 @@ void					check_args(int ac, char **av)
 
 std::vector<int>			sortings(std::vector<float> list)
 {
+  std::vector<float>			ex;
   std::vector<int>			res;
   Selection				selection;
   Insertion				insertion;
@@ -68,24 +69,25 @@ std::vector<int>			sortings(std::vector<float> list)
   Quick					quick;
   Merge					merge;
 
-  std::cout << "coucou1" << std::endl;
   res.push_back(list.size());
-  std::cout << "coucou2" << std::endl;
+  /*
   selection.sort(list);
   res.push_back(selection.get_it());
-  std::cout << "coucou3" << std::endl;
+  
   insertion.sort(list);
   res.push_back(insertion.get_it());
-  std::cout << "coucou4" << std::endl;
+  
   bubble.sort(list);
   res.push_back(bubble.get_it());
-  std::cout << "coucou5" << std::endl;
+  
   quick.sort(list);
   res.push_back(quick.get_it());
-  std::cout << "coucou6" << std::endl;
-  merge.sort(list);
+  */
+  ex = merge.sort(list);
+  print_ftab(ex);
+  std::cout << "its : " << merge.get_it() << std::endl;
   res.push_back(merge.get_it());
-  std::cout << "coucou7" << std::endl;
+  
   //print_res(res);
 }
 
