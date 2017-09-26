@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:33:57 2017 Tom Jeammet
-// Last update Mon Sep 25 13:55:48 2017 Tom Jeammet
+// Last update Tue Sep 26 09:59:05 2017 ze
 //
 
 #include "../inc/selection_sort.hpp"
@@ -39,7 +39,7 @@ void                                    Selection::incr_it(void)
 {
   this->_it = this->_it + 1;
 }
-
+/*
 std::vector<float>			Selection::sort(std::vector<float> tab)
 {
   float					pivot;
@@ -72,3 +72,4 @@ std::vector<float>			Selection::sort(std::vector<float> tab)
     }
   return (tab);
 }
+*/

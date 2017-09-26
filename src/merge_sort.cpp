@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:43:00 2017 Tom Jeammet
-// Last update Mon Sep 25 14:56:02 2017 Tom Jeammet
+// Last update Tue Sep 26 12:42:39 2017 ze
 //
 
 #include <iostream>
@@ -51,10 +51,10 @@ std::vector<float>			Merge::concat_sorting(std::vector<float> l1, std::vector<fl
   i = 0;
   j = 0;
   std::cout << "start : " << this->get_it() << std::endl;
-  while (i < l1.size())
+  while (i < (int)l1.size())
     {
       this->incr_it();
-      if (j < l2.size())
+      if (j < (int)l2.size())
 	{
 	  if (l1.at(i) < l2.at(j))
 	    {
@@ -73,7 +73,7 @@ std::vector<float>			Merge::concat_sorting(std::vector<float> l1, std::vector<fl
 	  i = i + 1;
 	}
     }
-  while (j < l2.size())
+  while (j < (int)l2.size())
     {
       final.push_back(l2.at(j));
       j = j + 1;
@@ -89,14 +89,14 @@ std::vector<float>			Merge::sort(std::vector<float> tab)
   int					i;
 
   i = 0;
-  if (tab.size() > 1)
+  if ((int)tab.size() > 1)
     {
-      while (i < tab.size() / 2)
+      while (i < (int)tab.size() / 2)
 	{
 	  list1.push_back(tab.at(i));
 	  i = i + 1;
 	}
-      while (i < tab.size())
+      while (i < (int)tab.size())
 	{
 	  list2.push_back(tab.at(i));
 	  i = i + 1;

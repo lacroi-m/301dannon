@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:40:10 2017 Tom Jeammet
-// Last update Sat Sep 23 10:17:54 2017 Tom Jeammet
+// Last update Tue Sep 26 12:41:26 2017 ze
 //
 
 #include "../inc/bubble_sort.hpp"
@@ -47,10 +47,10 @@ std::vector<float>			Bubble::sort(std::vector<float> tab)
   int					j;
 
   i = 0;
-  while (i < tab.size())
+  while (i < (int)tab.size())
     {
       j = 0;
-      while (j < tab.size() - 1)
+      while (j < (int)tab.size() - 1)
 	{
 	  this->incr_it();
 	  if (tab.at(j) > tab.at(j + 1))

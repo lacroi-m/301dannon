@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:35:18 2017 Tom Jeammet
-// Last update Mon Sep 25 12:52:22 2017 Tom Jeammet
+// Last update Tue Sep 26 10:12:04 2017 ze
 //
 
 #ifndef __MAIN_HPP__
@@ -25,5 +25,7 @@
 # include "bubble_sort.hpp"
 # include "quick_sort.hpp"
 # include "merge_sort.hpp"
+
+bool    isSorted(std::vector<float> nbrcpy);
 
 #endif /* ! __MAIN_HPP__ */

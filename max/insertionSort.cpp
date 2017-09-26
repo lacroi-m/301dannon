@@ -5,7 +5,7 @@
 // Login   <maxime.lacroix@epitech.eu>
 // 
 // Started on  Tue Sep 19 10:43:15 2017 ze
-// Last update Mon Sep 25 17:27:51 2017 ze
+// Last update Tue Sep 26 09:45:03 2017 ze
 //
 
 #include <vector>
@@ -101,11 +101,28 @@ int	main()
   nbr.push_back(9.89);
   nbr.push_back(-6);
 
-  nbr2.push_back(5);
-  nbr2.push_back(3);
-  nbr2.push_back(9.09);
-  nbr2.push_back(-6);
-  nbr2.push_back(5.01);
+  //-564 1340 42 129 858 1491 1508 246 -1281 655 1506 306 290 -768 116 765 -48 -512 2598 42 2339
+  nbr2.push_back(-564);
+  nbr2.push_back(1340);
+  nbr2.push_back(42);
+  nbr2.push_back(129);
+  nbr2.push_back(858);
+  nbr2.push_back(1491);
+  nbr2.push_back(1508);
+  nbr2.push_back(246);
+  nbr2.push_back(-1281);
+  nbr2.push_back(655);
+  nbr2.push_back(1506);
+  nbr2.push_back(306);
+  nbr2.push_back(290);
+  nbr2.push_back(-768);
+  nbr2.push_back(116);
+  nbr2.push_back(765);
+  nbr2.push_back(-48);
+  nbr2.push_back(-512);
+  nbr2.push_back(2598);
+  nbr2.push_back(42);
+  nbr2.push_back(2339);
   
   std::cout << "for this list:";
   print_vector(nbr);

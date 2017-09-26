@@ -5,10 +5,10 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:26:44 2017 Tom Jeammet
-// Last update Mon Sep 25 14:41:49 2017 Tom Jeammet
+// Last update Tue Sep 26 12:43:29 2017 ze
 //
 
-#include "../inc/main.hpp"
+#include "main.hpp"
 
 std::vector<float>			get_nbs(char **av)
 {
@@ -70,12 +70,12 @@ std::vector<int>			sortings(std::vector<float> list)
   Merge					merge;
 
   res.push_back(list.size());
-  /*
-  selection.sort(list);
-  res.push_back(selection.get_it());
-  
+
   insertion.sort(list);
   res.push_back(insertion.get_it());
+  /*
+    selection.sort(list);
+  res.push_back(selection.get_it());
   
   bubble.sort(list);
   res.push_back(bubble.get_it());
@@ -89,6 +89,7 @@ std::vector<int>			sortings(std::vector<float> list)
   res.push_back(merge.get_it());
   
   //print_res(res);
+  return (res);
 }
 
 int					main(int ac, char **av)
