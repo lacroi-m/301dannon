@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Wed Sep 20 00:38:35 2017 Tom Jeammet
-// Last update Tue Sep 26 13:44:50 2017 ze
+// Last update Wed Sep 27 15:42:28 2017 ze
 //
 
 #include "insertion_sort.hpp"
@@ -45,7 +45,7 @@ std::vector<float>			Insertion::sort(std::vector<float> tab)
   return (tab);
 }
 
-/*
+
 std::vector<float>      insertit(std::vector<float> builder, float number)
 {
   std::vector<float>    added;
@@ -74,7 +74,7 @@ std::vector<float>      insertit(std::vector<float> builder, float number)
     }
   return (builder);
 }
-*/
+
 int     insertionSort(std::vector<float> number)
 {
   int                   i;
