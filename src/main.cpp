@@ -5,7 +5,7 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:26:44 2017 Tom Jeammet
-// Last update Tue Sep 26 12:43:29 2017 ze
+// Last update Thu Sep 28 18:03:16 2017 ze
 //
 
 #include "main.hpp"
@@ -59,37 +59,14 @@ void					check_args(int ac, char **av)
     }
 }
 
-std::vector<int>			sortings(std::vector<float> list)
+void			sortings(std::vector<float> list)
 {
-  std::vector<float>			ex;
-  std::vector<int>			res;
-  Selection				selection;
-  Insertion				insertion;
-  Bubble				bubble;
-  Quick					quick;
-  Merge					merge;
-
-  res.push_back(list.size());
-
-  insertion.sort(list);
-  res.push_back(insertion.get_it());
-  /*
-    selection.sort(list);
-  res.push_back(selection.get_it());
-  
-  bubble.sort(list);
-  res.push_back(bubble.get_it());
-  
-  quick.sort(list);
-  res.push_back(quick.get_it());
-  */
-  ex = merge.sort(list);
-  print_ftab(ex);
-  std::cout << "its : " << merge.get_it() << std::endl;
-  res.push_back(merge.get_it());
-  
-  //print_res(res);
-  return (res);
+  std::cout << list.size() << " elements" << std::endl;
+  std::cout << "select sort:\t" << selectionSort(list) << std::endl;
+  std::cout << "insertion sort:\t" << insertionSort(list) << std::endl;
+  std::cout << "bubble sort:\t" << bubbleSort(list) << std::endl;
+  std::cout << "fusion sort:\t" << fusionSort(list) << std::endl;
+  std::cout << "quicksort:\t" << quickSort(list) << std::endl;
 }
 
 int					main(int ac, char **av)
@@ -101,7 +78,6 @@ int					main(int ac, char **av)
     {
       check_args(ac, av);
       list = get_nbs(av);
-      //print_ftab(list);
       sortings(list);
     }
   catch (Err &err)

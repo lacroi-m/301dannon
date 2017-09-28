@@ -5,12 +5,12 @@
 // Login   <tom.jeammet@epitech.eu>
 // 
 // Started on  Tue Sep 19 16:35:18 2017 Tom Jeammet
-// Last update Tue Sep 26 14:23:18 2017 ze
+// Last update Thu Sep 28 18:03:24 2017 ze
 //
 
 #ifndef __MAIN_HPP__
 # define __MAIN_HPP__
-
+#include "exception.hpp"
 # include <cstdlib>
 # include <iostream>
 # include <fstream>
@@ -18,14 +18,11 @@
 # include <string>
 # include <sstream>
 
-# include "exception.hpp"
-# include "print.hpp"
-# include "selection_sort.hpp"
-# include "insertion_sort.hpp"
-# include "bubble_sort.hpp"
-# include "quick_sort.hpp"
-# include "merge_sort.hpp"
-
 bool    isSorted(std::vector<float> nbrcpy);
-std::vector<float>      insertit(std::vector<float> builder, float number);
+int     selectionSort(std::vector<float> tab);
+int     insertionSort(std::vector<float> tab);
+int     bubbleSort(std::vector<float> tab);
+int     fusionSort(std::vector<float> tab);
+int     quickSort(std::vector<float> tab);
+
 #endif /* ! __MAIN_HPP__ */

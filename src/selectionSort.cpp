@@ -1,48 +1,51 @@
 //
-// selectionSort.cpp for  in /home/ze/school/301dannon
+// selection_sort.cpp for  in /home/kopiz/Workplace/301dannon/src
 // 
-// Made by ze
-// Login   <maxime.lacroix@epitech.eu>
+// Made by Tom Jeammet
+// Login   <tom.jeammet@epitech.eu>
 // 
-// Started on  Tue Sep 19 18:27:28 2017 ze
-// Last update Tue Sep 26 13:39:21 2017 ze
+// Started on  Wed Sep 20 00:33:57 2017 Tom Jeammet
+// Last update Thu Sep 28 17:59:42 2017 ze
 //
 
-#include <vector>
-#include <iostream>
 #include "main.hpp"
 
-int	selectionSort(std::vector<float> number)
+int	selectionSort(std::vector<float> tab)
 {
-  int			i;
-  int			j;	//comparing next a actual
-  int			count;  //count the number of operations
-  
-  float			lowest;
-  float			next;	//tmp cpy for swaping
-  
-  std::vector<float>	nbrcpy(number);
-  
-  i = 0;
-  count = 0;
-  while (i < (int)nbrcpy.size())
-    {
-      if (isSorted(nbrcpy) == true)
-	return (count);
-      j = i + 1;
-      while (j < (int)nbrcpy.size())
-	{
-	  lowest = nbrcpy[i];
-	  next = nbrcpy[j];
-	  if (lowest > next)
-	    {
-	      nbrcpy[j] = lowest;
-	      nbrcpy[i] = next;
-	    }
-	  count++;
-	  j++;
-	}
-      i++;
-    }
-  return (-1);
+  return (0);
 }
+
+/*
+std::vector<float>			Selection::sort(std::vector<float> tab)
+{
+  float					pivot;
+  int					pos_pivot;
+  int					i;
+  int					j;
+
+  i = 0;
+  while (i < tab.size())
+    {
+      j = i + 1;
+      pivot = tab.at(i);
+      pos_pivot = i;      
+      while (j < tab.size() - 1)
+	{
+	  this->incr_it();
+	  if (tab.at(j) < pivot)
+	    {
+	      pivot = tab.at(j);
+	      pos_pivot = j;
+	    }
+	  j = j + 1;
+	}
+      if (pivot != tab.at(i))
+	{
+	  tab.at(j) = tab.at(i);
+	  tab.at(i) = pivot;
+	}
+      i = i + 1;
+    }
+  return (tab);
+}
+*/

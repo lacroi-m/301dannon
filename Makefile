@@ -5,25 +5,16 @@
 ## Login   <tom.jeammet@epitech.eu>
 ## 
 ## Started on  Thu Jul 20 10:57:33 2017 Tom Jeammet
-## Last update Tue Sep 26 12:39:59 2017 ze
+## Last update Thu Sep 28 17:58:35 2017 ze
 ##
 
-CPP	= g++ -I./inc -Wall -Wextra -Werror
+CPP	= g++ -I./inc
 
 NAME	= 301dannon
 
 RM	= rm -f
 
 SRC	 = $(foreach dir,$(shell find src -type d),$(wildcard $(dir)/*.cpp))
-#SRC     =	src/exception.cpp\
-		src/print.cpp\
-		src/issorted.cpp\
-		src/selection_sort.cpp\
-		src/insertion_sort.cpp\
-		src/bubble_sort.cpp\
-		src/quick_sort.cpp\
-		src/merge_sort.cpp\
-		src/main.cpp
 
 OBJ     = $(SRC:.cpp=.o)
 
