@@ -1,14 +1,34 @@
 //
-// main.cpp for  in /home/kopiz/Workplace/301dannon/src
+// main.cpp for  in /home/ze/301dannon
 // 
-// Made by Tom Jeammet
-// Login   <tom.jeammet@epitech.eu>
+// Made by ze
+// Login   <maxime.lacroix@epitech.eu>
 // 
-// Started on  Tue Sep 19 16:26:44 2017 Tom Jeammet
-// Last update Thu Sep 28 18:03:16 2017 ze
+// Started on  Sun Oct  1 00:51:02 2017 ze
+// Last update Sun Oct  1 03:55:58 2017 ze
 //
 
 #include "main.hpp"
+
+bool isNbr(std::string s)
+{
+  int i = 0;
+  std::string::const_iterator it_c = s.begin();
+  while (it_c != s.end())
+    {
+      if (std::isdigit(*it_c) || *it_c == '.' || *it_c == '-')
+	{
+	  if (*it_c == '.' || *it_c == '-')
+	    i++;
+	  ++it_c;
+	}
+      else
+	throw (Err("Send me numbers, nothing else"));
+    }
+  if (i > 1)
+    throw (Err("Numbers cant have more than one \"-\" or \".\""));
+  return (true);
+}
 
 std::vector<float>			get_nbs(char **av)
 {
@@ -36,7 +56,8 @@ std::vector<float>			get_nbs(char **av)
     {
       tmp2 = *it;
       tmp3 = tmp2.c_str();
-      tab.push_back((float)atof(tmp3));
+      if (isNbr(tmp2) == true)
+	tab.push_back((float)atof(tmp3));
     }
   return (tab);
 }
@@ -61,6 +82,8 @@ void					check_args(int ac, char **av)
 
 void			sortings(std::vector<float> list)
 {
+  if (list.size() <= 0)
+    throw(Err("Empty list"));
   std::cout << list.size() << " elements" << std::endl;
   std::cout << "select sort:\t" << selectionSort(list) << std::endl;
   std::cout << "insertion sort:\t" << insertionSort(list) << std::endl;
@@ -71,7 +94,7 @@ void			sortings(std::vector<float> list)
 
 int					main(int ac, char **av)
 {
-  std::vector<float>			list;
+  std::vector<float>		list;
   std::vector<int>			res;
 
   try
@@ -83,7 +106,7 @@ int					main(int ac, char **av)
   catch (Err &err)
     {
       err.print_msg();
-      exit(84);
+      return (84);
     }
   return (0);
 }
