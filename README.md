@@ -1,6 +1,3 @@
+
 # 301dannon
-*dsc
-# 301dannon
-*dsc
-# 301dannon
-*dsc
+Comparison of fastest sorting algorythme between: select sort, insertion sort, bubble sort, bubble sort, quicksort
